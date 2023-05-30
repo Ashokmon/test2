@@ -1,0 +1,245 @@
+:root{
+    --red:maroon;
+    --green:#98DFD6;
+    --blue:maroon;
+    --yellow:maroon;
+    --white:white;
+    --black:black;
+}
+    *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+.landing{
+    background-image: url('/html/images/ven-pongal-sambar-coconut-chutney-260nw-1858937797.webp');
+    object-fit: cover;
+    background-size: cover;
+    background-position:center;
+    height:100vh;
+    color:var(--white);
+}
+header a{
+    text-decoration: none;
+    color:hwb(67 5% 4%);
+    font-weight: bold;
+    min-width: 150px;
+}
+header{
+    display:flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+
+#logo{
+    flex: 3;
+    font-size: 2rem;
+    min-width: 360px;
+}
+nav{
+    flex:2;
+    display:flex;
+    align-items: center;
+    
+}
+nav a{
+    flex:1;
+}
+nav a:hover{
+   color:var(--red);
+    }
+ .maintext{
+    display:flex;
+    flex-direction: column;
+    height:50vh;
+    justify-content: center;
+    padding:2em;
+ }  
+ .tagline1{
+    color:var(--red);
+    font-size:2.5em;
+    font-weight:bolder;
+ } 
+ .tagline2{
+    color:var(--yellow);
+ }
+ .maintext div{
+    margin-top:.75em;
+ }
+ .maintext button{
+    margin-top:2em;
+    width: 10%;
+    height:40px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    color:var(--white);
+    border : 1px solid black;
+    font-weight: bold;
+ }
+ .menu{
+      display: grid;
+      grid-template-columns:auto auto auto;
+    background:linear-gradient(to right,rgb(49, 48, 48),black);
+    color: var(--white);
+}
+ 
+#menuheading,#locheading{
+    background:linear-gradient(to right,rgb(49, 48, 48),black) ;
+    font-size:2.5em;
+    color:var(--red);
+     display:flex;
+     justify-content: center;
+}
+.menu th{
+    color: chartreuse;
+    font-size:1.8em;
+}
+table{
+    width:100%;
+    padding: 1em;
+}
+.menu tr{
+    display:flex;
+    justify-content: center;
+    margin:.8em;
+}
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: left;
+}
+.location{
+    background:linear-gradient(to right,rgb(49, 48, 48),black);
+    color: var(--white);
+    display: flex;
+    text-align: center;
+}
+.location h2{
+    color: chartreuse;
+    margin-bottom: .8em;
+}
+.location div{
+    flex:1;
+    
+}
+footer{
+    background-color: black;
+    color:aliceblue;
+   padding: .25em 1em;
+
+}
+header h4 i,nav a i{
+    margin-right: .5em;
+    margin-top: .5em;
+}
+#copyright{
+    margin-left: 20px;
+}
+.social-menu ul{
+    display: flex;
+    padding:0;
+
+}
+.social-menu ul li{
+    display:inline-block;
+    list-style:none;
+    margin:0 15px;
+
+}
+.social-menu ul li .fab{
+font-size: 25px;
+line-height: 40px;
+transition: 3s;
+color:#000;
+}
+.social-menu ul li .fab:hover{
+color:#fff;
+}
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0,0, .5);
+}
+.social-menu ul li a:hover{
+   transform: translate(0,-10%);
+}
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #4267b2;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #00acee;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color:green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    .menu{
+        display: grid;
+        grid-template-columns:auto;
+    
+}
+.location{
+    flex-wrap: wrap;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
